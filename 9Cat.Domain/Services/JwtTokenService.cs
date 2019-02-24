@@ -22,7 +22,7 @@ namespace _9Cat.Domain.Services
 			{
 				new Claim(JwtRegisteredClaimNames.Iss, _configuration.GetSection("Hostname")?.Value),
 				new Claim(JwtRegisteredClaimNames.Aud, _configuration.GetSection("Hostname")?.Value),
-				new Claim(JwtRegisteredClaimNames.Sub, email)
+				new Claim(JwtRegisteredClaimNames.Sub, email),
 			};
 
 			var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetSection("IssuerSigningKey")?.Value));

@@ -79,7 +79,7 @@ namespace _9Cat.Api
 		{
 			services.AddAuthorization(o =>
 			{
-				o.AddPolicy("LoggedInUsers", p => p.RequireClaim("Sub", "milostomsik1@gmail.com"));
+				o.AddPolicy("IsMyself", p => p.RequireClaim("sub", "milostomsik1@gmail.com"));
 			});
 		}
 	}
