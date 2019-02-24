@@ -8,7 +8,7 @@
 *.sln.docstates
 
 9Cat.Api/connectionStrings.json
-9Cat.Api/apiKeys.json
+9Cat.Api/appKeys.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
